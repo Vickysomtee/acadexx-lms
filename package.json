@@ -1,0 +1,32 @@
+{
+	"name": "acadexx-lms",
+	"version": "1.0.0",
+	"description": "hello",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky install"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Vickysomtee/acadexx-lms.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Vickysomtee/acadexx-lms/issues"
+	},
+	"homepage": "https://github.com/Vickysomtee/acadexx-lms#readme",
+	"lint-staged": {
+		"**/*.{js,jsx,ts,tsx}": [
+			"npx prettier --write",
+			"npx eslint --fix"
+		]
+	},
+	"devDependencies": {
+		"eslint": "^8.28.0",
+		"husky": "^8.0.2",
+		"lint-staged": "^13.0.4",
+		"prettier": "^2.8.0"
+	}
+}
