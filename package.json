@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-    "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\"",
+		"configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\"",
 		"prepare": "husky install"
 	},
 	"repository": {
@@ -19,18 +19,19 @@
 	},
 	"homepage": "https://github.com/Vickysomtee/acadexx-lms#readme",
 	"lint-staged": {
-		"**/*.{js,jsx,ts,tsx}": [
+		"**/*.{js,jsx,ts,tsx,vue}": [
 			"npx prettier --write",
 			"npx eslint --fix"
 		]
 	},
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
 	"devDependencies": {
 		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
 		"husky": "^8.0.2",
 		"lint-staged": "^13.0.4",
 		"prettier": "^2.8.0"
