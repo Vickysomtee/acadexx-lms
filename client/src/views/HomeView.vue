@@ -1,7 +1,5 @@
-<template>
+<template >
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <div class="justify-center flex bg-blue-300 items-center h-screen">Us</div>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -14,6 +12,9 @@ export default {
   name: 'HomeView',
   components: {
     HelloWorld
-  }
+  },
+  created() {
+  document.body.style.backgroundColor = '#3503FD'
+}
 }
 </script>
